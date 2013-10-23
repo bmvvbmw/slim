@@ -49,6 +49,6 @@ function legalKey(string) {
 }
 
 AV.Cloud.define("hello", function(request, response) {
-  response.success("Hello world!"+testfunction(AV.Cloud));
+  response.success("Hello world!"+testfunction(AV));
 });
 
