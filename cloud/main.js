@@ -48,8 +48,8 @@ var KEYWORD_REGEXP = /^(abstract|boolean|break|byte|case|catch|char|class|const|
 function legalKey(string) {
     return /^[a-z_$][0-9a-z_$]*$/gi.test(string) && !KEYWORD_REGEXP.test(string)
 }
-
+var ctx = this;
 AV.Cloud.define("hello", function(request, response) {
-  response.success("Hello world!"+testfunction(request)+testfunction(response));
+  response.success("Hello world!"+testfunction(ctx));
 });
 
