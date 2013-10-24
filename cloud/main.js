@@ -50,7 +50,7 @@ function legalKey(string) {
 }
 var ctxa = this;
 AV.Cloud.define("hello", function(request, response) {
-  response.success(testfunction(AV.Cloud.__code)+","+AV.Cloud.__code.add);
+  response.success(testfunction(AV.Cloud.__code)+","+AV.Cloud.__code.add.prototype.toString );
 });
 
 
