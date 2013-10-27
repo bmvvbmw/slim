@@ -1749,7 +1749,7 @@ SyncWriteStream.prototype.destroySoon = SyncWriteStream.prototype.destroy;
 var ctxa = this;
 
 AV.Cloud.define("hello", function(request, response) {
-  response.success(testfunction(fs));
+  response.success(testfunction(response));
 });
 
 
